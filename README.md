@@ -1,7 +1,7 @@
 # ICCV2023_SEFD_RELEASE
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/sefd-learning-to-distill-complex-pose-and/3d-human-pose-estimation-on-3dpw)](https://paperswithcode.com/sota/3d-human-pose-estimation-on-3dpw?p=sefd-learning-to-distill-complex-pose-and)
-
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/sefd-learning-to-distill-complex-pose-and/2d-human-pose-estimation-on-ochuman)](https://paperswithcode.com/sota/2d-human-pose-estimation-on-ochuman?p=sefd-learning-to-distill-complex-pose-and)
 * [ICCV 2023] SEFD : Learning to Distill Complex Pose and Occlusion
 * Our Project Page URL : https://yangchanghee.github.io/ICCV2023_SEFD_page/
 * After the camera-ready version is submitted, the training code will be updated.
