@@ -1,0 +1,20 @@
+trainset_3d: ['Human36M', 'MuCo']
+trainset_2d: ['MSCOCO', 'MPII']
+#trainset_3d: ['Human36M']
+#trainset_2d: ['MSCOCO']
+testset: 'PW3D'
+
+lr_dec_epoch: [10]
+end_epoch: 14
+lr: 0.0001
+lr_backbone: 0.0001
+lr_dec_factor: 10
+origin: True
+inference_testing: True
+
+distillation_module: True
+distillation_pretrained: True
+distillation_loss: "log_softmax_l1"
+dilstillation_edge: "Canny"
+distillation_pretrained: True
+demo: False

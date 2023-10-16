@@ -1,8 +1,12 @@
 # ICCV2023_SEFD_RELEASE
 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/sefd-learning-to-distill-complex-pose-and/3d-human-pose-estimation-on-3dpw)](https://paperswithcode.com/sota/3d-human-pose-estimation-on-3dpw?p=sefd-learning-to-distill-complex-pose-and)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/sefd-learning-to-distill-complex-pose-and/2d-human-pose-estimation-on-ochuman)](https://paperswithcode.com/sota/2d-human-pose-estimation-on-ochuman?p=sefd-learning-to-distill-complex-pose-and)
+
 * [ICCV 2023] SEFD : Learning to Distill Complex Pose and Occlusion
 * Our Project Page URL : https://yangchanghee.github.io/ICCV2023_SEFD_page/
-* After the camera-ready version is submitted, the training code will be updated.
+* The training code be updated!!(2023/10/16) 
+* We've managed to make it work to some extent, but we anticipate that many issues may arise because we only uploaded very basic code. If you encounter any problems, please report them as issues immediately. We will make updates promptly! :)
 
 ![front_figur](./assets/main_figure.png)
 
@@ -78,13 +82,17 @@ Refer to [here](./assets/directory.md).
 * If you downloaded SMPL_overlap_edge, check [here](./assets/directory.md).
 
 ## Running SEFD
-* After the camera-ready version is submitted, the training code will be updated.
+Frist finish the directory setting.
+then, refer to [here](./assets/running.md) to train and test SEFD.
 
 ## Running SEFD with various edges
-* After the camera-ready version is submitted, the training code will be updated.
+refer to [here](./assets/various_edge.md) to train and test SEFD with various edges.  
+refer to [here](./assets/various_edge.md) to train and test without feature distillation.  
+* To use variable edges, you must change the path of `${ROOT}/main/config.py`.
+* line in 82, 84, 87 "putting your path" is your project directory. So you have to change it.
 
 ## Running SEFD with various losses
-* After the camera-ready version is submitted, the training code will be updated.
+refer to [here](./assets/various_loss.md) to train and test SEFD with various losses.
 
 ## Running SEFD with various feature connection
-* After the camera-ready version is submitted, the training code will be updated.
+refer to [here](./assets/various_feature_connections.md) to train and test SEFD with various feature connections.
