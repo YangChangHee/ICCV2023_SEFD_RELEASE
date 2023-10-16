@@ -2,7 +2,10 @@
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/sefd-learning-to-distill-complex-pose-and/3d-human-pose-estimation-on-3dpw)](https://paperswithcode.com/sota/3d-human-pose-estimation-on-3dpw?p=sefd-learning-to-distill-complex-pose-and)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/sefd-learning-to-distill-complex-pose-and/2d-human-pose-estimation-on-ochuman)](https://paperswithcode.com/sota/2d-human-pose-estimation-on-ochuman?p=sefd-learning-to-distill-complex-pose-and)
+<<<<<<< HEAD
 
+=======
+>>>>>>> 21e9a93674c4388963d16e65e0ef05d27051b876
 * [ICCV 2023] SEFD : Learning to Distill Complex Pose and Occlusion
 * Our Project Page URL : https://yangchanghee.github.io/ICCV2023_SEFD_page/
 * The training code be updated!!(2023/10/16) 
@@ -95,4 +98,8 @@ refer to [here](./assets/various_edge.md) to train and test without feature dist
 refer to [here](./assets/various_loss.md) to train and test SEFD with various losses.
 
 ## Running SEFD with various feature connection
+<<<<<<< HEAD
 refer to [here](./assets/various_feature_connections.md) to train and test SEFD with various feature connections.
+=======
+* After the camera-ready version is submitted, the training code will be updated.
+>>>>>>> 21e9a93674c4388963d16e65e0ef05d27051b876
