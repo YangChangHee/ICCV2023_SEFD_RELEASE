@@ -12,7 +12,7 @@
 ![front_figur](./assets/main_figure.png)
 
 ## Our Project Page
-You can check our project page at [here]([https://anonymous.4open.science/w/SEFD_page-EC0F/](https://yangchanghee.github.io/ICCV2023_SEFD_page/)).  
+You can check our project page at [here](https://yangchanghee.github.io/ICCV2023_SEFD_page/).  
 (To access smoothly, you need to hold down the Ctrl key and click with the mouse.)
 
 ## Thank you for providing a good baseline
