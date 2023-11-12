@@ -66,7 +66,7 @@ ${ROOT}
 ```  
 * Download `J_regressor_*.npy` [[data](https://drive.google.com/drive/folders/187Azod6z13-dS7W5wHerCTgniHYet-yh?usp=sharing)]
 * Download CrowdPose data [[data](https://drive.google.com/drive/folders/1qV5Cx5DJLhJVXlfB0vmQrB3ndJXsTZVM?usp=sharing)]
-* Download Human3.6M parsed data and SMPL parameters [[data](https://drive.google.com/drive/folders/1r0B9I3XxIIW_jsXjYinDpL6NFcxTZart?usp=sharing)][[SMPL parameters from SMPLify-X](https://drive.google.com/drive/folders/12fCumEgs9PXT-dAaOGq0EDpl9dGKKorF?usp=sharing)](https://drive.google.com/drive/folders/1s-yywb4zF_OOLMmw1rsYh_VZFilgSrrD?usp=sharing)]
+* Download Human3.6M parsed data and SMPL parameters [[data](https://drive.google.com/drive/folders/1r0B9I3XxIIW_jsXjYinDpL6NFcxTZart?usp=sharing)][[SMPL parameters from SMPLify-X](https://drive.google.com/drive/folders/12fCumEgs9PXT-dAaOGq0EDpl9dGKKorF?usp=sharing)]
 * Download MuCo parsed/composited data and SMPL parameters [[data](https://drive.google.com/drive/folders/1dfhFa1kBHYKLTKuprNc7xixt3yyKEky5?usp=sharing)][[SMPL parameters from SMPLify-X](https://drive.google.com/drive/folders/1Wm1_6tn1u-_RE1iUlibIWfS75O79aJRz?usp=sharing)] 
 * Download MS COCO [[data](https://cocodataset.org/#download)] 
 * Download MPII data [[data](https://drive.google.com/drive/folders/1zQZpfNu0s19tA7Z1SmulP1cDaVfNDDd3?usp=sharing)]
