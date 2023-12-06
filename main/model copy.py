@@ -11,7 +11,6 @@ from config import cfg
 from contextlib import nullcontext
 import math
 from utils.transforms import rot6d_to_axis_angle
-from losses import camera_fitting_loss, body_fitting_loss
 from pidinet_config import config_model, config_model_converted
 from Pidinet import PiDiNet
 from RCF import RCF
