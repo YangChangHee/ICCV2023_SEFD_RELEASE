@@ -41,11 +41,11 @@ class PW3D(torch.utils.data.Dataset):
 
         #self.joints_name = ('Pelvis', 'L_Hip', 'R_Hip', 'Torso', 'L_Knee', 'R_Knee', 'Spine', 'L_Ankle', 'R_Ankle', 'Chest', 'L_Toe', 'R_Toe', 'Neck', 'L_Thorax', 'R_Thorax',
         #                    'Head', 'L_Shoulder', 'R_Shoulder', 'L_Elbow', 'R_Elbow', 'L_Wrist', 'R_Wrist', 'L_Hand', 'R_Hand', 'Nose', 'L_Eye', 'R_Eye', 'L_Ear', 'R_Ear', 'Head_top')
-        self.oks_joints_name = ( 'Pelvis', 'L_Hip', 'R_Hip', 'Spine1', 'L_Knee', 'R_Knee', 'Spine2', 'L_Ankle', 'R_Ankle', 'Spine3', 'L_Foot', 'R_Foot', 'Neck', 'L_Collar',
-                            'R_Collar','Head', 'L_Shoulder', 'R_Shoulder', 'L_Elbow', 'R_Elbow', 'L_Wrist', 'R_Wrist', 'L_Hand', 'R_Hand')
+        # self.oks_joints_name = ( 'Pelvis', 'L_Hip', 'R_Hip', 'Spine1', 'L_Knee', 'R_Knee', 'Spine2', 'L_Ankle', 'R_Ankle', 'Spine3', 'L_Foot', 'R_Foot', 'Neck', 'L_Collar',
+        #                     'R_Collar','Head', 'L_Shoulder', 'R_Shoulder', 'L_Elbow', 'R_Elbow', 'L_Wrist', 'R_Wrist', 'L_Hand', 'R_Hand')
 
-        self.oks_openpose_joint_name=('Nose', 'Neck', 'R_Shoulder', 'R_Elbow', 'R_Wrist', 'L_Shoulder', 'L_Elbow', 'L_Wrist', 'R_Hip', 'R_Knee', 'R_Ankle', 'L_Hip',
-        'L_Knee', 'L_Ankle', 'R_Eye', 'L_Eye', 'R_Ear',  'L_Ear')
+        # self.oks_openpose_joint_name=('Nose', 'Neck', 'R_Shoulder', 'R_Elbow', 'R_Wrist', 'L_Shoulder', 'L_Elbow', 'L_Wrist', 'R_Hip', 'R_Knee', 'R_Ankle', 'L_Hip',
+        # 'L_Knee', 'L_Ankle', 'R_Eye', 'L_Eye', 'R_Ear',  'L_Ear')
 
 
         # H36M joint set
@@ -151,12 +151,12 @@ class PW3D(torch.utils.data.Dataset):
                     root_joint_depth = None
                 test_input=np.array(ann['openpose_result']).copy()
                 gt_2d_pose=np.array(ann['joint_img'],dtype=np.float32)
-                gt_out_joint = transform_joint_to_other_db(gt_2d_pose, self.oks_joints_name,self.oks_openpose_joint_name)
+                # gt_out_joint = transform_joint_to_other_db(gt_2d_pose, self.oks_joints_name,self.oks_openpose_joint_name)
                 visibility = np.array([[0],[1],[1],[1],[1],[1],[1],[1],[1],[1],[1],[1],[1],[1],[0],[0],[0],[0]])
                 valide=visibility
                 test_input=test_input*visibility
                 
-                compute_oks=self.oks(gt_out_joint, test_input[:,:2], valide,bbox[3]/10)
+                # compute_oks=self.oks(gt_out_joint, test_input[:,:2], valide,bbox[3]/10)
                 openpose = np.array(ann['openpose_result'], dtype=np.float32).reshape(-1, 3)
 
                 openpose = self.add_pelvis(openpose, self.openpose_joints_name)
@@ -174,7 +174,7 @@ class PW3D(torch.utils.data.Dataset):
                         hhrnetpose = transform_joint_to_other_db(hhrnetpose, self.openpose_joints_name, self.coco_joints_name)
 
                 datalist.append({
-                    'compute_oks':compute_oks,
+                    # 'compute_oks':compute_oks,
                     'ann_id': aid,
                     'img_path': img_path,
                     "SMPL_overlap_path":SMPL_overlap_path,
@@ -242,12 +242,12 @@ class PW3D(torch.utils.data.Dataset):
                     root_joint_depth = None
                 test_input=np.array(ann['openpose_result']).copy()
                 gt_2d_pose=np.array(ann['joint_img'],dtype=np.float32)
-                gt_out_joint = transform_joint_to_other_db(gt_2d_pose, self.oks_joints_name,self.oks_openpose_joint_name)
+                # gt_out_joint = transform_joint_to_other_db(gt_2d_pose, self.oks_joints_name,self.oks_openpose_joint_name)
                 visibility = np.array([[0],[1],[1],[1],[1],[1],[1],[1],[1],[1],[1],[1],[1],[1],[0],[0],[0],[0]])
                 valide=visibility
                 test_input=test_input*visibility
                 
-                compute_oks=self.oks(gt_out_joint, test_input[:,:2], valide,bbox[3]/10)
+                # compute_oks=self.oks(gt_out_joint, test_input[:,:2], valide,bbox[3]/10)
                 openpose = np.array(ann['openpose_result'], dtype=np.float32).reshape(-1, 3)
 
                 openpose = self.add_pelvis(openpose, self.openpose_joints_name)
@@ -265,7 +265,7 @@ class PW3D(torch.utils.data.Dataset):
                         hhrnetpose = transform_joint_to_other_db(hhrnetpose, self.openpose_joints_name, self.coco_joints_name)
 
                 datalist.append({
-                    'compute_oks':compute_oks,
+                    # 'compute_oks':compute_oks,
                     'ann_id': aid,
                     'img_path': img_path,
                     "SMPL_overlap_path":SMPL_overlap_path,
@@ -329,12 +329,12 @@ class PW3D(torch.utils.data.Dataset):
                     root_joint_depth = None
                 test_input=np.array(ann['openpose_result']).copy()
                 gt_2d_pose=np.array(ann['joint_img'],dtype=np.float32)
-                gt_out_joint = transform_joint_to_other_db(gt_2d_pose, self.oks_joints_name,self.oks_openpose_joint_name)
+                # gt_out_joint = transform_joint_to_other_db(gt_2d_pose, self.oks_joints_name,self.oks_openpose_joint_name)
                 visibility = np.array([[0],[1],[1],[1],[1],[1],[1],[1],[1],[1],[1],[1],[1],[1],[0],[0],[0],[0]])
                 valide=visibility
                 test_input=test_input*visibility
                 
-                compute_oks=self.oks(gt_out_joint, test_input[:,:2], valide,bbox[3]/10)
+                # compute_oks=self.oks(gt_out_joint, test_input[:,:2], valide,bbox[3]/10)
                 openpose = np.array(ann['openpose_result'], dtype=np.float32).reshape(-1, 3)
 
                 openpose = self.add_pelvis(openpose, self.openpose_joints_name)
@@ -352,7 +352,7 @@ class PW3D(torch.utils.data.Dataset):
                         hhrnetpose = transform_joint_to_other_db(hhrnetpose, self.openpose_joints_name, self.coco_joints_name)
 
                 datalist.append({
-                    'compute_oks':compute_oks,
+                    # 'compute_oks':compute_oks,
                     'ann_id': aid,
                     'img_path': img_path,
                     "SMPL_overlap_path":SMPL_overlap_path,
